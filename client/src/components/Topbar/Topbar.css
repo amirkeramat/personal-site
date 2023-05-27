@@ -1,0 +1,26 @@
+#topBar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.topBar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link-item{
+    padding: 1.2rem 25px 1.2rem 25px;
+}
+.active  {
+    background-color: #CEE2F8;
+    color: #0679E4;
+}
+.topBar_menu-link{
+    cursor: pointer;
+    
+}
