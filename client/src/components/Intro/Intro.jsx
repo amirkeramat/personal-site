@@ -33,15 +33,15 @@ const Intro = () => {
         </div>
         <div className='flex flex-col space-y-2 lg:space-y-0 lg:flex-row justify-between w-full lg:w-[350px]'>
           <button className=' bg-bg-primary-color text-white-color w-full lg:w-[150px] h-[50px] rounded-lg transition-all duration-500 hover:shadow-lg'>
-            <div className='flex items-center justify-evenly'>
+            <div className='flex items-center justify-center'>
               Hire Me
-              <FaArrowRight />
+              <FaArrowRight className="ms-5" />
             </div>
           </button>
           <button className=' bg-text-secondary-color text-text-primary-color w-full lg:w-[150px] h-[50px] rounded-lg transition-all duration-500 hover:shadow-lg'>
-            <div className='flex items-center justify-evenly'>
+            <div className='flex items-center justify-center'>
               My Portfolio
-              <FaArrowRight />
+              <FaArrowRight className="ms-5" />
             </div>
           </button>
         </div>
