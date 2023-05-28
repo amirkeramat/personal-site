@@ -9,7 +9,7 @@ import Blog from "./components/Blog/Blog";
 import Contact from "./components/Contact/Contact";
 function App() {
   return (
-    <>
+    <div>
       <Topbar />
       <Intro />
       <About />
@@ -18,7 +18,7 @@ function App() {
       <Pricing />
       <Blog />
       <Contact />
-    </>
+    </div>
   );
 }
 
