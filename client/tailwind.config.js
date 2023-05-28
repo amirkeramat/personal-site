@@ -18,6 +18,9 @@ export default {
         "text-content-color": "#999999",
         "--primary-font": "IRANSans",
       },
+      backgroundImage: {
+        "hero-bg": "url('/img/bg_1.jpg.jpg')",
+      },
     },
   },
   plugins: [],
