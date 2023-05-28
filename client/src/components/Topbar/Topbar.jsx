@@ -29,8 +29,8 @@ export default function Topbar() {
       <div className='topBar-container  h-[60px] flex justify-between items-center px-[1rem] lg:px-[5rem] '>
         <p className=' text-2xl font-extrabold'>Amir.kr</p>
         <ul
-          className={`topBar_menu-links flex justify-center items-center transition-all duration-500   absolute  right-0 left-0 bg-bg-primary-color flex-col lg:bg-transparent lg:flex-row lg:relative lg:top-0 lg:justify-between text-sm ${
-            showMenu ? "top-[59px]" : "-top-[200px]"
+          className={`topBar_menu-links flex justify-center items-center transition-all duration-500   absolute  right-0 left-0 bg-bg-primary-color flex-col lg:bg-transparent lg:flex-row lg:relative lg:top-0 lg:justify-between text-lg ${
+            showMenu ? "top-[59px]" : "-top-[300px]"
           } `}>
           <li className='relative topBar_menu-link'>
             <Link
@@ -103,8 +103,11 @@ export default function Topbar() {
             </Link>
           </li>
         </ul>
-        <div className='block lg:hidden'>
-          <TfiMenu className=' z-[90]' onClick={showMenuHandler} />
+        <div
+          onClick={showMenuHandler}
+          className='flex items-center space-y-1 lg:hidden -[90]'>
+          <TfiMenu />
+          <h6>MENU</h6>
         </div>
       </div>
     </nav>

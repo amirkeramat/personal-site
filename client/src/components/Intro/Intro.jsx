@@ -1,6 +1,11 @@
 import { Button } from "react-scroll";
 import Typewriter from "typewriter-effect";
-import { FaFacebook, FaInstagram, FaTelegram } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTelegram,
+  FaArrowRight,
+} from "react-icons/fa";
 const Intro = () => {
   return (
     <div
@@ -26,26 +31,32 @@ const Intro = () => {
             Vokalia and Consonantia, there live the blind texts.
           </p>
         </div>
-        <div className='flex justify-between w-full lg:w-[350px]'>
-          <button className=' bg-bg-primary-color text-white-color w-[150px] h-[50px] rounded-lg transition-all duration-500 hover:shadow-lg'>
-            Hire Me
+        <div className='flex flex-col space-y-2 lg:space-y-0 lg:flex-row justify-between w-full lg:w-[350px]'>
+          <button className=' bg-bg-primary-color text-white-color w-full lg:w-[150px] h-[50px] rounded-lg transition-all duration-500 hover:shadow-lg'>
+            <div className='flex items-center justify-evenly'>
+              Hire Me
+              <FaArrowRight />
+            </div>
           </button>
-          <button className=' bg-text-secondary-color text-text-primary-color w-[150px] h-[50px] rounded-lg transition-all duration-500 hover:shadow-lg'>
-            My Portfolio
+          <button className=' bg-text-secondary-color text-text-primary-color w-full lg:w-[150px] h-[50px] rounded-lg transition-all duration-500 hover:shadow-lg'>
+            <div className='flex items-center justify-evenly'>
+              My Portfolio
+              <FaArrowRight />
+            </div>
           </button>
         </div>
-        <div className='w-full lg:w-[350px] flex justify-between text-white-color'>
+        <div className='w-full lg:w-[350px] flex justify-between text-black  font-extrabold'>
           <span className='flex items-center space-y-2 space-x-1'>
             <FaFacebook />
-            <h6>Facebook</h6>
+            <a target="blank" href='https://www.facebook.com/amirkeramat'>Facebook</a>
           </span>
           <span className='flex items-center  space-y-2 space-x-1'>
             <FaInstagram />
-            <h6>Instagram</h6>
+            <a target="blank" href='https://www.instagram.com/amirkeramat'>Instagram</a>
           </span>
           <span className='flex items-center space-y-2 space-x-1'>
             <FaTelegram />
-            <h6>Telegram</h6>
+            <a target="blank" href='https://www.telegram.com/@amirkeramat'>Telegram</a>
           </span>
         </div>
       </div>
