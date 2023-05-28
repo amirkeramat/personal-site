@@ -17,6 +17,7 @@ export default {
         "text-title-color": "#323232",
         "text-content-color": "#999999",
         "--primary-font": "IRANSans",
+        "active-color": "#3e9ff9",
       },
       backgroundImage: {
         "hero-bg": "url('/img/bg_1.jpg.jpg')",
